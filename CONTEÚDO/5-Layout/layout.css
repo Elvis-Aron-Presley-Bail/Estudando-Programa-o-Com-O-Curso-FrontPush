@@ -1,0 +1,32 @@
+body {
+    background-color: #F9ED69;
+}
+
+button {
+    background-color: #6A2C70;
+    padding: 10px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #470c4d;
+}
+
+.caixa {
+    background-color: #B83B5E;
+}
+
+section {
+    background-color: #F08A5D;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 900px){
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
