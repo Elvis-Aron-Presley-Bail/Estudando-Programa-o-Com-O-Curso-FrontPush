@@ -1,0 +1,50 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 {
+    background-color: blue;
+}
+
+.sec1 p + span {  /*seleciona o span que está em baixo do parágrafo*/
+    color: yellow;
+}
+
+.sec2 {
+    background-color: aqua;
+}
+
+.sec2 > span {  /*seleciona o filho direto*/
+    color: greenyellow;
+}
+
+
+form {
+    background-color: red;
+}
+
+input[type=text] {  /*seleciona o elemento pelo atributo*/
+    background-color: rgb(71, 18, 18);
+}
+
+
+h1, h2, h3 {  /*seleciona os elementos mencionados*/
+    color: orange;
+}
+
+
+p::first-letter {  /*modifica a primeira letra de todos os parágrafos*/
+    text-transform: capitalize;
+    color: palevioletred;
+}
+
+
+ul {
+    background-color: purple;
+}
+
+li:nth-child(1) {  /*modifica o primeiro li de todos*/
+    background-color: green;
+}
+
