@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+.container {
+    height: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid white;
+
+    display: flex;
+    flex-wrap: wrap; /*quebra a linha*/
+    justify-content: space-around; /*trabalha na Horizontal*/
+    align-items: center;
+}
+
+/*@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}*/
+
+.item {
+    background-color: blue;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    max-height: 100px;
+}
