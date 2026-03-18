@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+}
+
+.caixa {
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+}
