@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+.container {
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+   
+}
+
+/*@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}*/
+
+.item {
+    background-color: blue;
+    margin: 5px;
+    text-align: center;
+
+    flex: 1 1 200px;
+}
