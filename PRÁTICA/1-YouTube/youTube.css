@@ -37,6 +37,9 @@ nav {
     width: 50px;
     background-color: #ccc;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-manu {
@@ -61,30 +64,31 @@ nav {
 
 .container {
     max-width: 1440px;
-    border: 5px solid purple;
     margin: 0 auto;
     display: flex;
     padding: 8px 24px;
+    flex-wrap: wrap;
 }
 
 .container-item-1 {
-    flex: 6 1 auto;
+    flex: 1 1 600px;
     margin-right: 8px;
     display: flex;
     flex-direction: column;
+    padding: 16px 0px;
 }
 
 .video-main {
     background-color: #ccc;
-    height: 340px;
+    height: 480px;
     width: 100%;
     border-radius: 10px;
 }
 
 .container-item-2 {
-    background-color: #999;
-    flex: 1 1 auto;
+    flex: 1 1 200px;
     margin-left: 8px;
+    padding: 16px 0px;
 }
 
 h3 {
@@ -93,6 +97,31 @@ h3 {
     color: #fff;
 }
 
+h4 {
+    color: #fff;
+}
+
 p {
     color: #777;
+}
+
+.thumb {
+    width: 150px;
+    height: 100px;
+    margin-right: 8px;
+
+    background-color: #fff;
+    border-radius: 10px;
+
+    flex: 1 1 auto;
+}
+
+.video-side {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.description {
+    margin-left: 8px;
+    flex: 1 1 auto;
 }
