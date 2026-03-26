@@ -8,8 +8,6 @@
 body {
     max-width: 100%;
     height: 100vh;
-
-    background-color: #f9c80e;
 }
 
 header {
@@ -62,13 +60,18 @@ nav {
 }
 
 .container {
+    width: 100%;
+    background-color: #f9c80e;
+    border-bottom: 3px solid black;
+}
+
+.main-1 {
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
 .first-row {
-    background-color: purple;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,13 +79,87 @@ nav {
 }
 
 .item-first-row {
-    background-color: aqua;
     flex: 1 1 400px;
 }
 
 .thumb1 {
-    
+    border: 4px solid black;
     height: 220px;
     display: flex;
     background-color: #f86624;
+    margin-bottom: 10px;
+}
+
+.container2 {
+    width: 100%;
+    background-color: #4fbbcb;
+}
+
+.main-2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.second-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-collum {
+    flex: 1 1 350px;
+    padding: 10px;
+}
+
+.thumb-collum-1 {
+    background-color: #ffffff;
+    height: 450px;
+    border: 4px solid black;
+    margin-bottom: 10px;
+}
+
+.second-collum {
+    flex: 1 1 350px;
+}
+
+.second-collum-row {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+.thumb-collum-2 {
+    background-color: #ffffff;
+    height: 143.5px;
+    flex: 8 1 300px;
+    border: 4px solid black;
+}
+
+.info-collum-2 {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thirt-collum {
+    flex: 1 1 350px;
+}
+
+.thumb-collum-3 {
+    height: 220.5px;
+    background-color: #ffffff;
+    flex: 8 1 300px;
+    border: 4px solid black;
+}
+
+.thirt-collum-row {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+.info-collum-3 {
+    flex: 1 1 auto;
+    margin-top: 20px;
 }
