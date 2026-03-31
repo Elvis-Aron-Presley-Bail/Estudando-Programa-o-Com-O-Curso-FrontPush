@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list {
+    border: 2px solid purple;
+    padding: 16px;
+
+    li {
+        border: 1px solid black;
+        list-style: none;
+        padding: 6px 12px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.5s ease;
+
+            &:hover {
+                color: purple;
+            }
+
+        }
+
+    }
+}
