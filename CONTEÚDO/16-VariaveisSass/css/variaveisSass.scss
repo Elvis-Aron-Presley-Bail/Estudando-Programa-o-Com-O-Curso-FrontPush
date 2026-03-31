@@ -1,0 +1,44 @@
+@import '_colors';
+@import '_shadow';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: $branco;
+    
+    span {
+        color: $laranjado;
+    }
+
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: $branco;
+    background-color: $roxo;
+    padding: 12px 124px;
+    margin-top: 24px;
+    border-radius: 10px;
+
+    transition: 0.5s ease;
+
+    &:hover {
+        box-shadow: $shadow_roxa;
+    }
+
+}
