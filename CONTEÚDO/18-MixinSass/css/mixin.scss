@@ -1,3 +1,5 @@
+@import '_cores';
+
 @mixin responsive-tablet {
     font-variant: small-caps;
 
@@ -12,6 +14,14 @@
     @media screen and (max-width: 460px) {
         @content;
     }
+}
+
+@mixin responsive-smart {
+
+    @media screen and (max-width: 300px){
+        @content;
+    }
+
 }
 
 * {
@@ -29,6 +39,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include responsive-smart() {
+        color: purple;
+        background-color: $roxo;
+    }
+
 }
 
 h1 {
