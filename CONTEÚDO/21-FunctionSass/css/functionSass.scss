@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+}
+
+@function grid($col, $total: 12) {
+    @return ($col / $total) * 100%
+};
+
+.caixa {
+    max-width: 980px;
+    min-height: 90px;
+    background-color: aquamarine;
+    display: flex;
+    padding: 10px;
+}
+
+.caixa1 {
+    border: 2px solid purple;
+    width: grid(5);
+}
+
+.caixa2 {
+    border: 2px solid purple;
+    width: grid(7);
+}
