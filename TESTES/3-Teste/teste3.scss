@@ -1,0 +1,62 @@
+@mixin tela-culular {
+
+    @media screen and (max-width: 900px) {
+        color: purple;
+    }
+
+};
+
+$atual: light;
+
+$bg-color: #1f1f1f;
+$color: white;
+
+@if $atual == dark {
+    $bg-color: #1f1f1f;
+    $color: white;
+} @else if $atual == light{
+    $bg-color: white;
+    $color: #1f1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: $bg-color;
+    color: $color;
+
+    @include tela-culular()
+
+}
+
+@function calcular($col, $total: 12) {
+    @return ($col / $total) * 100%
+};
+
+.container {
+    height: 90px;
+    border: 4px solid blue;
+    padding: 10px;
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+@for $i from 1 through 12 {
+    .item-#{$i} {
+        width: calc(#{calcular($i)} - 24px);
+        height: 60px;
+        margin: 24px / 2;
+        border: 2px solid green;
+        float: left;
+    }
+}
