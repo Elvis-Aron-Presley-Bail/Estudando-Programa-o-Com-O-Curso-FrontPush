@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: darkcyan;
+}
+
+.caixa {
+    max-width: 1200px;
+    height: 90px;
+    border: 4px solid purple;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@function grid($col, $total: 12) {
+    @return ($col / $total) * 100%
+};
+
+@for $i from 1 through 12 {
+    .item-#{$i}{
+        width: grid($i);
+        height: 50px;
+        border: 2px solid green;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
