@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: gray;
+}
+
+.red {
+    background-color: red;
+    transition: 1s ease;
+}
+
+.blue {
+    background-color: blue;
+    transition: 1s ease;
+}
+
+.green {
+    background-color: green;
+    transition: 1s ease;
+}
+
+.purple {
+    background-color: purple;
+    transition: 1s ease;
+}

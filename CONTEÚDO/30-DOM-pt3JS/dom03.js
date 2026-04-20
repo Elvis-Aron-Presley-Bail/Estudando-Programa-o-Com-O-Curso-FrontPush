@@ -6,13 +6,31 @@ box.addEventListener('click', () => {
 })
 */
 
+
+/*
 function callback(event){
     console.log(event.target)
 }
+*/
 
-box.addEventListener('click', callback)
+function callback(event) {
+    if(event.key == 'r') {
+        box.classList.toggle('red')
+    }
+    else if(event.key == 'b') {
+        box.classList.toggle('blue')
+    }
+    else if(event.key == 'g') {
+        box.classList.toggle('green')
+    }
+    else {
+        box.classList.toggle('purple')
+    }
+}
 
-box.style.backgroundColor = 'gray'
+window.addEventListener('keydown', callback)
+
+
 
 //currentTarget = retorna apenas o box
 //target = retorna o box, mas tambem seus elementos filhos se clicados
