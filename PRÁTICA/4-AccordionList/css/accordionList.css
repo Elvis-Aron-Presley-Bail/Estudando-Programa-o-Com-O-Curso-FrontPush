@@ -22,9 +22,20 @@ body {
 }
 
 .accordion-button {
+  display: block;
   background-color: transparent;
   color: white;
   padding: 8px 16px;
   width: 100%;
   margin-top: 16px;
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.cor {
+  background-color: black;
+  transition: 1s ease;
 }/*# sourceMappingURL=accordionList.css.map */
