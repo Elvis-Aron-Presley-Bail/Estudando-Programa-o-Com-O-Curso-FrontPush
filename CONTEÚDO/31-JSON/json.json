@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nome": "Notebook Dell",
+        "modelo": "Gamer",
+        "quantidade": 5
+    },
+    
+    {
+        "id": 2,
+        "nome": "Notebook Acer",
+        "modelo": "Gamer",
+        "quantidade": 10,
+        "usb-c": false,
+        "fabricantes1": {
+            "cidade": "Curitiba",
+            "estado": "Paraná"
+        },
+        "fabricantes2": [
+            "Florianópolis",
+            "Santa Catarina"
+        ]
+    }
+]
