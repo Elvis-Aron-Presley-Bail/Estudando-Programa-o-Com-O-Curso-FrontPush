@@ -1,0 +1,116 @@
+@import '_cores';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: $rosa;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    border: 2px solid;
+    gap: 36px;
+}
+
+li a {
+    text-decoration: none;
+    color: $branco;
+}
+
+.logo {
+    color: $branco;
+    font-weight: 800;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    transform: scale(140%);
+}
+
+.container {
+    border: 2px solid;
+    width: 100%;
+}
+
+@function calcular($col, $total: 12) {
+    @return ($col / $total) * 100%
+};
+
+@for $i from 1 through 12 {
+    .item-#{$i} {
+        border: 2px solid black;
+        width: calcular($i);
+        margin-left: 8px;
+        margin-right: 8px;
+        height: 300px;
+    }
+} 
+
+.caixa {
+    border: 2px solid;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 8px;
+}
+
+.hamburguerOn {
+    position: fixed;
+    background-color: green;
+    right: 0;
+    top: 0;
+    padding: 48px;
+    height: 100vh;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease;
+
+}
+
+.hamLigado {
+    opacity: 100;
+    pointer-events: all;
+}
+
+.ulHamburguer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-width: 800px;
+}
