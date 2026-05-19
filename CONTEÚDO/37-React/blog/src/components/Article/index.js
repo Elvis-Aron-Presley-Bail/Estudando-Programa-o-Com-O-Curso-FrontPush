@@ -4,10 +4,14 @@ import Post from "../Post";
 function Article() {
 
     return(
-        <>
-            <h1>Article</h1>
-            <Post />
-        </>
+        <section className="container">
+            <h3>Articles</h3>
+            <div className="container-post mt-5">
+                <Post />
+                <Post />
+                <Post />
+            </div>
+        </section>
     );
 }
 

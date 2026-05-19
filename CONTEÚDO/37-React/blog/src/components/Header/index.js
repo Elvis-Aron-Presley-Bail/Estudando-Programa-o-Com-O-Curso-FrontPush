@@ -7,7 +7,7 @@ function Header() {
     return (
         <>
             <header className='flex-space-between'>
-                <div className="logo border">
+                <div className="logo">
                     <img src={logosvg} alt={descLogo} />
                 </div>
                 <div className="search">
