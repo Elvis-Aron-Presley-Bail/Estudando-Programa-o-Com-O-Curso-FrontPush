@@ -1,15 +1,13 @@
 
-function Post() {
+function Post(props) {
 
     return(
         <div className="post mx-2">
             <div className="img-post"></div>
-            <h5>Tecnologia</h5>
-            <h3>O guia definitivo do Blog</h3>
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+            <h5>{props.subtitle}</h5>
+            <h3>{props.title}</h3>
+            <p className="mt-1">
+                {props.children}
             </p>
             <div className="flex pt-3">
                 <div className="img-profile"></div>
