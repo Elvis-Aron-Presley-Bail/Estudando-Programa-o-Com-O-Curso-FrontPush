@@ -1,0 +1,25 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.ajust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.menu {
+    display: flex;
+}

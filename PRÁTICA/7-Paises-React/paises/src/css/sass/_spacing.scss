@@ -1,0 +1,51 @@
+$gap-p: 8px;
+$gap-m: 16px;
+$gap-g: 32px;
+
+.mt-p{
+    margin-top: $gap-p;
+}
+
+.mt-m{
+    margin-top: $gap-m;
+}
+
+.mt-g{
+    margin-top: $gap-g;
+}
+
+.mb-p{
+    margin-bottom: $gap-p;
+}
+
+.mb-m{
+    margin-bottom: $gap-m;
+}
+
+.mb-g{
+    margin-bottom: $gap-g;
+}
+
+.ml-p{
+    margin-left: $gap-p;
+}
+
+.ml-m{
+    margin-left: $gap-m;
+}
+
+.ml-g{
+    margin-left: $gap-g;
+}
+
+.mr-p{
+    margin-right: $gap-p;
+}
+
+.mr-m{
+    margin-right: $gap-m;
+}
+
+.mr-g{
+    margin-right: $gap-g;
+}
