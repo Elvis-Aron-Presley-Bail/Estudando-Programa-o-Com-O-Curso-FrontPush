@@ -52,6 +52,34 @@
   margin-right: 32px;
 }
 
+.pr-p {
+  padding-right: 8px;
+}
+
+.pr-m {
+  padding-right: 16px;
+}
+
+.pr-g {
+  padding-right: 32px;
+}
+
+.pl-p {
+  padding-left: 8px;
+}
+
+.pl-m {
+  padding-left: 16px;
+}
+
+.pl-g {
+  padding-left: 32px;
+}
+
+h3, h5 {
+  color: blue;
+}
+
 body {
   background-color: green;
   width: 100%;
@@ -61,12 +89,6 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   height: 80px;
-}
-
-.ajust {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sb {
@@ -81,4 +103,39 @@ header {
 
 .menu {
   display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.input-search {
+  display: block;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.postagem {
+  max-width: 300px;
+}
+
+.info-post {
+  display: flex;
+}
+
+.img-perfil {
+  height: 40px;
+  width: 40px;
+  background-color: gray;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

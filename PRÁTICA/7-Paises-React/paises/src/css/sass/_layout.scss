@@ -4,12 +4,6 @@ header {
     height: 80px;
 }
 
-.ajust {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .sb {
     display: flex;
     justify-content: space-between;
@@ -22,4 +16,39 @@ header {
 
 .menu {
     display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $preto;
+    padding: 8px;
+}
+
+.input-search {
+    display: block;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.postagem {
+    max-width: 300px;
+}
+
+.info-post {
+    display: flex;
+}
+
+.img-perfil {
+    height: 40px;
+    width: 40px;
+    background-color:  gray;
+    border-radius: 50%;
 }
